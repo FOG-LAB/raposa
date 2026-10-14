@@ -20,8 +20,9 @@ spec:
             - containerPort: 80
           volumeMounts:
             - name: html-volume
-              mountPath: /www/index.html
-              subPath: index.html
+              mountPath: /www
+              # mountPath: /www/index.html
+              # subPath: index.html
       volumes:
         - name: html-volume
           configMap:
