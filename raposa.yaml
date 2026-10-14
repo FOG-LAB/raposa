@@ -18,6 +18,14 @@ spec:
           image: kampov/pagina-da-raposa:1.1
           ports:
             - containerPort: 80
+          volumeMounts:
+            - name: html-volume
+              mountPath: /www/index.html
+              subPath: index.html
+      volumes:
+        - name: html-volume
+          configMap:
+            name: raposa-html
 ---
 apiVersion: v1
 kind: Service

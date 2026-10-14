@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: raposa-html
+  namespace: raposa
+data:
+  index.html: |
+    <!DOCTYPE html>
+    <html>
+    <head><title>Página da Raposa</title></head>
+    <body>
+      <h1>Uma salto da raposa, e outro salto a seguir</h1>
+    </body>
+    </html>
